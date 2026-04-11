@@ -13,7 +13,6 @@
       --muted: #9aa8c7;
       --accent: #7aa2ff;
       --accent-2: #6ee7c8;
-      --danger: #ff8f8f;
       --line: rgba(255,255,255,0.10);
       --shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
       --radius: 18px;
@@ -39,74 +38,131 @@
       padding: 28px 0 48px;
     }
 
-    .hero {
-      background: linear-gradient(135deg, rgba(122,162,255,0.18), rgba(110,231,200,0.08));
+    .section {
+      background: var(--panel);
       border: 1px solid var(--line);
-      border-radius: 28px;
-      padding: 28px;
+      border-radius: 24px;
       box-shadow: var(--shadow);
-      backdrop-filter: blur(16px);
+      overflow: hidden;
+      backdrop-filter: blur(14px);
     }
 
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.07);
-      color: var(--accent-2);
-      font-size: 13px;
-      letter-spacing: .04em;
+    .section-head {
+      padding: 20px 22px 16px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
-    h1 {
-      margin: 14px 0 10px;
-      font-size: clamp(28px, 4vw, 44px);
-      line-height: 1.15;
+    .title-wrap h1 {
+      margin: 0;
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.18;
       letter-spacing: -0.03em;
     }
 
-    .sub {
+    .desc {
+      margin-top: 8px;
       color: var(--muted);
-      max-width: 860px;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .stats {
-      margin-top: 22px;
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
+      grid-template-columns: repeat(4, minmax(110px, 1fr));
+      gap: 12px;
+      width: min(520px, 100%);
     }
 
     .stat {
       background: rgba(255,255,255,0.05);
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 16px 18px;
+      padding: 14px 16px;
     }
 
     .stat .num {
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 700;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .stat .label {
       color: var(--muted);
-      font-size: 13px;
+      font-size: 12px;
     }
 
     .toolbar {
-      margin-top: 18px;
+      padding: 16px 20px 0;
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       align-items: center;
     }
 
-    button, .chip {
+    .switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.05);
+      color: var(--text);
+      cursor: pointer;
+      user-select: none;
+      transition: .2s ease;
+    }
+
+    .switch:hover {
+      transform: translateY(-1px);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .switch-label {
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .switch-pill {
+      position: relative;
+      width: 44px;
+      height: 24px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.16);
+      transition: .2s ease;
+      flex: 0 0 auto;
+    }
+
+    .switch-pill::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #fff;
+      transition: .2s ease;
+    }
+
+    .switch.on {
+      border-color: rgba(122,162,255,0.35);
+      background: rgba(122,162,255,0.16);
+    }
+
+    .switch.on .switch-pill {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    }
+
+    .switch.on .switch-pill::after {
+      left: 23px;
+    }
+
+    button {
       border: 1px solid var(--line);
       background: rgba(255,255,255,0.06);
       color: var(--text);
@@ -117,47 +173,63 @@
       transition: .2s ease;
     }
 
-    button:hover, .chip:hover, .chip.active {
+    button:hover {
       transform: translateY(-1px);
       background: rgba(122,162,255,0.18);
       border-color: rgba(122,162,255,0.4);
     }
 
-    .section {
-      margin-top: 22px;
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      backdrop-filter: blur(14px);
+    .progress-wrap {
+      padding: 14px 20px 0;
     }
 
-    .section-head {
-      padding: 18px 22px;
-      border-bottom: 1px solid var(--line);
+    .progress-meta {
       display: flex;
       justify-content: space-between;
-      align-items: center;
       gap: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 8px;
       flex-wrap: wrap;
     }
 
-    .section-head h2 {
-      margin: 0;
-      font-size: 20px;
+    .progress {
+      width: 100%;
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      overflow: hidden;
     }
 
-    .section-head .desc {
-      color: var(--muted);
-      font-size: 13px;
+    .bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      transition: width .25s ease;
     }
 
     .module-tabs {
-      padding: 14px 20px 0;
+      padding: 16px 20px 0;
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.06);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 11px 16px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: .2s ease;
+    }
+
+    .chip:hover, .chip.active {
+      transform: translateY(-1px);
+      background: rgba(122,162,255,0.18);
+      border-color: rgba(122,162,255,0.4);
     }
 
     .cards {
@@ -173,7 +245,7 @@
       border: 1px solid var(--line);
       border-radius: 20px;
       padding: 18px;
-      min-height: 204px;
+      min-height: 220px;
       display: flex;
       flex-direction: column;
       gap: 12px;
@@ -206,7 +278,27 @@
       font-size: 20px;
       font-weight: 700;
       line-height: 1.35;
-      min-height: 56px;
+    }
+
+    .hint-box {
+      display: none;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: -2px;
+    }
+
+    .hint-box.show {
+      display: flex;
+    }
+
+    .hint {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(110,231,200,0.10);
+      border: 1px solid rgba(110,231,200,0.22);
+      color: #c8f6ea;
+      font-size: 12px;
+      line-height: 1;
     }
 
     .answer {
@@ -238,77 +330,6 @@
       border-color: rgba(110,231,200,0.38) !important;
     }
 
-    .quiz {
-      padding: 22px;
-    }
-
-    .quiz-box {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 22px;
-    }
-
-    .quiz-title {
-      font-size: 14px;
-      color: var(--accent-2);
-      margin-bottom: 10px;
-    }
-
-    .quiz-q {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 14px;
-      line-height: 1.4;
-    }
-
-    textarea {
-      width: 100%;
-      min-height: 120px;
-      resize: vertical;
-      background: rgba(4, 7, 16, 0.65);
-      color: var(--text);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 14px 16px;
-      font: inherit;
-      line-height: 1.7;
-    }
-
-    .quiz-result {
-      margin-top: 16px;
-      display: none;
-      background: rgba(8, 12, 24, 0.48);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 16px;
-      font-size: 14px;
-    }
-
-    .quiz-result.show { display: block; }
-
-    .progress {
-      margin-top: 12px;
-      width: 100%;
-      height: 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.08);
-      overflow: hidden;
-    }
-
-    .bar {
-      height: 100%;
-      width: 0%;
-      background: linear-gradient(90deg, var(--accent), var(--accent-2));
-      transition: width .25s ease;
-    }
-
-    .footer-note {
-      margin-top: 18px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
     .hide-keywords .answer .key {
       background: rgba(255,143,143,0.2);
       color: transparent;
@@ -316,167 +337,197 @@
       user-select: none;
     }
 
-    .legend {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      color: var(--muted);
-      font-size: 13px;
+    .hide-keywords.beginner-weak .answer .key {
+      color: #ffd4d4;
+      background: rgba(255,143,143,0.18);
+      padding: 0 2px;
     }
 
-    .legend span {
-      padding: 8px 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.04);
+    .hide-keywords.beginner-weak .answer .key .mask-rest {
+      color: transparent;
+      user-select: none;
+    }
+
+    .hide-keywords.beginner-strong .answer .key {
+      color: #ffd4d4;
+      background: rgba(255,143,143,0.18);
+      padding: 0 2px;
+    }
+
+    .hide-keywords.beginner-strong .answer .key .mask-rest,
+    .hide-keywords.beginner-strong .answer .key .mask-rest-strong {
+      color: transparent;
+      user-select: none;
+    }
+
+    .mode-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px;
+      border-radius: 16px;
       border: 1px solid var(--line);
+      background: rgba(255,255,255,0.05);
+    }
+
+    .mode-title {
+      font-size: 14px;
+      color: var(--muted);
+      padding: 0 6px 0 4px;
+      white-space: nowrap;
+    }
+
+    .mode-btn {
+      padding: 9px 12px;
+      border-radius: 10px;
+      font-size: 13px;
+      background: transparent;
+    }
+
+    .mode-btn.active {
+      background: rgba(122,162,255,0.18);
+      border-color: rgba(122,162,255,0.4);
     }
 
     @media (max-width: 900px) {
       .stats, .cards { grid-template-columns: 1fr; }
+      .section-head { flex-direction: column; }
       .prompt { font-size: 18px; }
-      .quiz-q { font-size: 20px; }
     }
   </style>
 </head>
 <body>
-  <div class="wrap" id="app">
-    <section class="hero">
-      <div class="eyebrow">记忆训练版 · 金融基础高频考点</div>
-      <h1>证券金融考前记忆训练页</h1>
-      <div class="sub">
-        这不是普通的电子讲义，而是一份可直接反复刷的记忆训练页面。内容已按主题重组为闪卡模式、自测模式和已掌握追踪模式，适合在考前高频滚动复习。
-      </div>
-      <div class="stats">
-        <div class="stat"><div class="num" id="totalCount">49</div><div class="label">总考点</div></div>
-        <div class="stat"><div class="num" id="moduleCount">8</div><div class="label">主题模块</div></div>
-        <div class="stat"><div class="num" id="doneCount">0</div><div class="label">已标记掌握</div></div>
-        <div class="stat"><div class="num" id="rateText">0%</div><div class="label">掌握进度</div></div>
-      </div>
-      <div class="toolbar">
-        <button id="toggleKeywords">切换关键词遮挡</button>
-        <button id="expandAll">展开全部答案</button>
-        <button id="collapseAll">收起全部答案</button>
-        <button id="resetProgress">清空掌握记录</button>
-      </div>
-      <div class="progress"><div class="bar" id="progressBar"></div></div>
-      <div class="footer-note">建议使用顺序：先看“闪卡训练”进行回忆，再进入“随机自测”做输出训练，最后用“已掌握”标记收尾。</div>
-    </section>
-
+  <div class="wrap">
     <section class="section">
       <div class="section-head">
-        <div>
-          <h2>闪卡训练</h2>
-          <div class="desc">按知识模块刷题。先看问题，先回忆，再翻答案。</div>
+        <div class="title-wrap">
+          <h1>证券金融考前记忆训练页</h1>
+          <div class="desc">按模块刷题。可切换关键词遮挡、答案展开、双档提示强度和掌握进度追踪。</div>
         </div>
-        <div class="legend">
-          <span>点击“显示答案”进行主动回忆</span>
-          <span>点击“已掌握”记录复习进度</span>
+        <div class="stats">
+          <div class="stat"><div class="num" id="totalCount">49</div><div class="label">总考点</div></div>
+          <div class="stat"><div class="num" id="moduleCount">8</div><div class="label">主题模块</div></div>
+          <div class="stat"><div class="num" id="doneCount">0</div><div class="label">已标记掌握</div></div>
+          <div class="stat"><div class="num" id="rateText">0%</div><div class="label">掌握进度</div></div>
         </div>
       </div>
+
+      <div class="toolbar">
+        <div class="switch" id="toggleKeywords">
+          <span class="switch-label">关键词遮挡</span>
+          <span class="switch-pill"></span>
+        </div>
+        <div class="switch" id="toggleAnswers">
+          <span class="switch-label">展开答案</span>
+          <span class="switch-pill"></span>
+        </div>
+        <div class="mode-group" id="beginnerGroup">
+          <span class="mode-title">提示强度</span>
+          <button class="mode-btn active" data-mode="off">关闭</button>
+          <button class="mode-btn" data-mode="weak">弱提示</button>
+          <button class="mode-btn" data-mode="strong">强提示</button>
+        </div>
+        <button id="resetProgress">清空掌握记录</button>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span>当前模块支持主动回忆与半提示回忆两种练习方式</span>
+          <span id="modeText">当前：标准模式</span>
+        </div>
+        <div class="progress"><div class="bar" id="progressBar"></div></div>
+      </div>
+
       <div class="module-tabs" id="moduleTabs"></div>
       <div class="cards" id="cards"></div>
     </section>
-
-    <section class="section">
-      <div class="section-head">
-        <div>
-          <h2>随机自测</h2>
-          <div class="desc">不给提示，直接默写。更接近真实考试输出。</div>
-        </div>
-      </div>
-      <div class="quiz">
-        <div class="quiz-box">
-          <div class="quiz-title" id="quizMeta">随机抽题</div>
-          <div class="quiz-q" id="quizQuestion"></div>
-          <textarea id="quizInput" placeholder="请先根据记忆自行作答，再点击下方按钮对照标准答案。"></textarea>
-          <div class="actions" style="margin-top:14px;">
-            <button id="showQuizAnswer">显示标准答案</button>
-            <button id="nextQuiz">下一题</button>
-            <button id="markQuizMastered">这题已掌握</button>
-          </div>
-          <div class="quiz-result" id="quizResult"></div>
-        </div>
-      </div>
-    </section>
   </div>
 
+  
   <script>
-    const data = [
-      { id: 1, module: "融资基础", tag: "直接融资", q: "直接融资的核心特点是什么？", a: "<span class='key'>直接性</span>、<span class='key'>分散性</span>；融资的信誉存较大差异；部分融资方式具有<span class='key'>不可逆性</span>；融资者有相对较强的自主性。" },
-      { id: 2, module: "融资基础", tag: "直接融资", q: "直接融资的方式有哪些？", a: "股票市场融资、债券市场融资、<span class='key'>风险投资融资</span>、商业信用融资（商品赊销、预付定金、预付货款等）、民间借贷。" },
-      { id: 3, module: "融资基础", tag: "间接融资", q: "间接融资的核心特点是什么？", a: "<span class='key'>资金获得的间接性</span>；融资的相对集中性；融资信誉的差异性相对较少；全程具有可逆性（可返还性）；融资活动主要集中在金融中介机构手中。" },
-      { id: 4, module: "融资基础", tag: "间接融资", q: "间接融资的方式有哪些？", a: "银行信用融资、消费信用融资、<span class='key'>租赁融资</span>。" },
-      { id: 5, module: "金融体系", tag: "证券交易所", q: "1602年阿姆斯特丹创设了什么金融机构？", a: "阿姆斯特丹创建了世界上最早的证券交易所——<span class='key'>阿姆斯特丹证券交易所</span>。" },
-      { id: 6, module: "金融体系", tag: "流动性", q: "金融资产流动性的含义是什么？", a: "又称变现性。指金融资产的持有者为了资金安全而进行资金调拨所形成的短期资金流动，又称避险性资金流动或资本外逃。" },
-      { id: 7, module: "金融体系", tag: "商业银行", q: "商业银行的三类主要业务是什么？", a: "<span class='key'>负债业务</span>、<span class='key'>资产业务</span>和<span class='key'>表外业务</span>。" },
-      { id: 8, module: "金融体系", tag: "中央银行", q: "中央银行的货币发行本质是什么？", a: "实质就是有效发挥其<span class='key'>媒介资源配置</span>的功能。" },
-      { id: 9, module: "金融体系", tag: "货币乘数", q: "货币乘数与法定存款准备金率是什么关系？公式是什么？", a: "两者成<span class='key'>反比</span>。若 m 代表货币乘数，则简单货币乘数公式为：<span class='key'>m = 1 / r</span>。" },
-      { id: 10, module: "金融体系", tag: "货币政策", q: "货币政策目标可分为哪三个层次？", a: "<span class='key'>最终目标</span>、<span class='key'>中介目标</span>和<span class='key'>操作目标</span>。" },
-      { id: 11, module: "金融体系", tag: "货币政策", q: "货币政策最终目标有哪些？", a: "稳定物价、充分就业、经济增长、<span class='key'>国际收支平衡</span>和金融稳定。" },
-      { id: 12, module: "金融体系", tag: "货币政策", q: "货币政策中介目标有哪些？", a: "<span class='key'>银行信贷规模</span>、<span class='key'>货币供应量</span>、<span class='key'>长期利率</span>等。" },
-      { id: 13, module: "金融体系", tag: "货币政策", q: "货币政策操作目标有哪些？", a: "短期货币市场利率、银行准备金及<span class='key'>基础货币</span>等。" },
-      { id: 14, module: "金融体系", tag: "政策工具", q: "一般性货币政策工具主要包括哪三大工具？", a: "<span class='key'>存款准备金制度</span>、<span class='key'>再贴现政策</span>和<span class='key'>公开市场业务</span>。" },
-      { id: 15, module: "证券市场", tag: "交易所", q: "沪深证券交易所分别何时正式营业？", a: "上海证券交易所于<span class='key'>1990年12月19日</span>正式营业；深圳证券交易所于<span class='key'>1991年7月3日</span>正式营业。" },
-      { id: 16, module: "证券市场", tag: "板块", q: "中小企业板块最早由哪家交易所在主板市场内设立？", a: "<span class='key'>深圳证券交易所</span>在主板市场内设立中小企业板块。" },
-      { id: 17, module: "证券市场", tag: "创业板", q: "创业板市场的定位与特点是什么？", a: "深圳证券交易所创业板，<span class='key'>高风险</span>、<span class='key'>监管要求严格</span>，以及明显的<span class='key'>高技术产业导向</span>特点。" },
-      { id: 18, module: "证券市场", tag: "场外市场", q: "场外市场的特点有哪些？", a: "挂牌标准相对较低；通常不对企业规模和盈利情况等进行要求；信息披露要求较低；监管较为宽松；交易制度通常采用<span class='key'>做市商制度</span>。" },
-      { id: 19, module: "证券市场", tag: "场外市场", q: "我国的场外市场包括哪些？", a: "区域性股权市场、券商柜台市场、机构间私募产品报价与服务系统、<span class='key'>私募基金市场</span>。" },
-      { id: 20, module: "证券市场", tag: "央行", q: "中国人民银行的定位是什么？", a: "国务院组成部门，是一国政府<span class='key'>发行法偿货币</span>、制定和执行货币政策、实施金融监管的重要机构。" },
-      { id: 21, module: "证券市场", tag: "股票发行", q: "我国公司再融资的常见方式有哪些？", a: "向原股东配售股份（配股）、向不特定对象公开募集股份（增发）、发行可转换公司债券、<span class='key'>非公开发行股票</span>（定向增发）。" },
-      { id: 22, module: "证券市场", tag: "投资者", q: "机构投资者主要包括哪些？", a: "政府机构投资者、金融机构类投资者、合格境外机构投资者（QFII）、合格境内机构投资者（QDII）、企业和事业法人类机构投资者以及基金投资者。" },
-      { id: 23, module: "证券市场", tag: "金融机构", q: "银行类金融机构包括哪些？", a: "商业银行、城市商业银行、农村信用合作社等吸收公众存款的金融机构及<span class='key'>政策性银行</span>。" },
-      { id: 24, module: "证券市场", tag: "基金分类", q: "基金类投资者包括哪些？", a: "证券投资基金、社保基金、企业年金和<span class='key'>社会公益基金</span>。" },
-      { id: 25, module: "证券市场", tag: "责任", q: "证券服务机构制作、出具文件有虚假记载等情形时承担什么责任？", a: "应当与委托人承担<span class='key'>连带赔偿责任</span>，但能够证明自己没有过错的除外。" },
-      { id: 26, module: "证券市场", tag: "交易所设立", q: "证券交易所的设立批准机关是谁？", a: "设立证券交易所必须制定章程，交易所章程的制定和修改，必须经<span class='key'>国务院证券监督管理机构</span>批准。" },
-      { id: 27, module: "证券市场", tag: "股票分类", q: "在我国，按投资主体不同，股票可分为哪些类型？", a: "<span class='key'>国家股</span>、<span class='key'>法人股</span>、<span class='key'>社会公众股</span>和<span class='key'>外资股</span>等。" },
-      { id: 28, module: "股票", tag: "B股", q: "境内上市外资股（B股）的计价与交易特点是什么？", a: "采取<span class='key'>记名股票</span>形式，以<span class='key'>人民币</span>标明股票面值，以<span class='key'>外币</span>认购、买卖，在境内证券交易所上市交易。" },
-      { id: 29, module: "股票", tag: "境外上市", q: "境外上市外资股主要由哪几类构成？", a: "主要由<span class='key'>H股</span>、<span class='key'>N股</span>、<span class='key'>S股</span>等构成。" },
-      { id: 30, module: "股票", tag: "托管", q: "什么是证券托管？", a: "指投资者将持有的证券委托给证券公司保管，并由后者代为处理有关证券权益事务的证券托管行为。" },
-      { id: 31, module: "股票", tag: "竞价原则", q: "证券交易所内证券交易按什么原则竞价成交？", a: "按照<span class='key'>价格优先</span>、<span class='key'>时间优先</span>原则竞价成交。" },
-      { id: 32, module: "股票", tag: "股票性质", q: "股票具有哪五个基本特征？", a: "<span class='key'>收益性</span>、<span class='key'>风险性</span>、<span class='key'>流动性</span>、<span class='key'>永久性</span>、<span class='key'>参与性</span>。" },
-      { id: 33, module: "股票", tag: "内在价值", q: "哪些因素会影响股票内在价值？", a: "宏观形势变化、宏观经济政策的调整、供求关系的变化等都会影响上市公司未来收益，进而影响股票的变化。" },
-      { id: 34, module: "债券", tag: "债券分析", q: "债券分析主要包括哪三大内容？", a: "<span class='key'>宏观经济分析</span>、<span class='key'>行业和区域分析</span>、<span class='key'>公司分析</span>。" },
-      { id: 35, module: "债券", tag: "债券定义", q: "债券的定义是什么？", a: "债券是一种有价证券，是社会各类经济主体为筹集资金而向债券投资者出具的、承诺按一定利率定期支付利息并到期偿还本金的<span class='key'>债权债务凭证</span>。" },
-      { id: 36, module: "债券", tag: "债券分类", q: "按债券募集方式，债券可以分为哪三类？", a: "<span class='key'>公募债券</span>、<span class='key'>凭证式债券</span>和<span class='key'>记账式债券</span>。" },
-      { id: 37, module: "债券", tag: "政府债券", q: "政府债券的含义是什么？", a: "指政府部门或其他代理机构为筹集资金，以政府名义发行的、承诺在一定时期支付利息和到期归还本金的债务凭证。" },
-      { id: 38, module: "债券", tag: "政府债券", q: "政府债券的特点有哪些？", a: "<span class='key'>安全性高</span>、<span class='key'>流动性强</span>、<span class='key'>收益稳定</span>、<span class='key'>免税待遇</span>。" },
-      { id: 39, module: "债券", tag: "地方政府债", q: "地方政府债券的定义是什么？", a: "也称地方公债或地方债，是地方政府根据本地区经济发展和资金需求状况，以承担还本付息责任为前提，向社会筹集资金的债务凭证。" },
-      { id: 40, module: "债券", tag: "金融债", q: "我国的金融债券主要包括哪些？", a: "政策性金融债券、商业银行债券、证券公司债券、保险公司债券、财务公司债券和<span class='key'>金融租赁公司债券</span>等。" },
-      { id: 41, module: "债券", tag: "可转债", q: "可转换公司债券与一般债券最大的区别是什么？", a: "在转换前投资者可以定期得到利息收入，但此时<span class='key'>不具有股东的权利</span>。" },
-      { id: 42, module: "债券", tag: "公司债发行", q: "中小市值企业集合票据的发行主体有什么要求？", a: "<span class='key'>2个（含）以上</span>、<span class='key'>10个（含）以下</span>具有法人资格的企业。" },
-      { id: 43, module: "债券", tag: "国际债券", q: "欧洲债券的定义是什么？", a: "借款人在本国境外市场发行的、不以发行市场所在国货币为面值的国际债券。" },
-      { id: 44, module: "债券", tag: "国际债券", q: "欧洲债券常见的面值货币有哪些？", a: "主要为<span class='key'>美元</span>；也有欧元、英镑、日元等；还可能使用复合货币单位，如特别提款权。" },
-      { id: 45, module: "基金与衍生品", tag: "风险管理", q: "什么是基差风险？", a: "<span class='key'>基差少要回报率</span>等于<span class='key'>真实无风险收益率</span>加<span class='key'>预期通货膨胀率</span>加<span class='key'>风险溢价</span>。" },
-      { id: 46, module: "基金与衍生品", tag: "基金定义", q: "证券投资基金的特点有哪些？", a: "<span class='key'>集合投资</span>、<span class='key'>专业管理</span>、<span class='key'>组合投资</span>、<span class='key'>分散风险</span>；<span class='key'>利益共享</span>、<span class='key'>风险共担</span>；严格监管、信息透明；独立托管、保障安全。" },
-      { id: 47, module: "基金与衍生品", tag: "封闭式基金", q: "封闭式基金的存续期通常如何规定？", a: "通常在<span class='key'>5年以上</span>，一般为<span class='key'>10年或15年</span>，经持有人大会通过并经监管机构同意可以宣告延长期限。" },
-      { id: 48, module: "基金与衍生品", tag: "基金运作", q: "从基金管理人的角度看，基金运作可以分为哪两大部分？", a: "<span class='key'>基金的市场营销</span>、<span class='key'>投资管理</span>与<span class='key'>后台管理</span>。" },
-      { id: 49, module: "基金与衍生品", tag: "监管与公式", q: "基金管理人、基金业协会、开放式基金赎回、基金估值和金融期权分类有哪些高频记忆点？", a: "基金管理人：其总托管人既是基金的当事人，又是基金的主要服务机构。基金业协会：<span class='key'>中国证券投资基金业协会</span>是我国基金行业的<span class='key'>自律性组织</span>。开放式基金赎回：基金份额持有人要求基金管理人购回其所持份额。基金资产净值=<span class='key'>基金资产总值-基金负债</span>；基金份额净值=<span class='key'>基金资产净值÷基金总份额</span>。按基础资产划分，金融远期合约包括：股权类资产远期合约、债权类资产远期合约、<span class='key'>远期利率协议</span>、<span class='key'>远期汇率协议</span>。金融期权四项功能：<span class='key'>套期保值</span>、<span class='key'>价格发现</span>、<span class='key'>投机</span>和<span class='key'>获利</span>。按履约时间分为<span class='key'>欧式期权</span>、<span class='key'>美式期权</span>和<span class='key'>修正的美式期权</span>。" }
-    ];
-
-    const modules = [...new Set(data.map(i => i.module))];
-    const app = document.getElementById('app');
     const cardsEl = document.getElementById('cards');
     const moduleTabs = document.getElementById('moduleTabs');
     const doneCountEl = document.getElementById('doneCount');
     const rateTextEl = document.getElementById('rateText');
     const progressBar = document.getElementById('progressBar');
+    const modeText = document.getElementById('modeText');
 
-    const STORAGE_KEY = 'finance-memory-mastered-v1';
+    const STORAGE_KEY = 'finance-memory-mastered-v4-txt';
     let mastered = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
-    let currentModule = modules[0];
-    let quizIndex = 0;
+    let currentModule = '';
+    let hideKeywords = false;
+    let expandAnswers = false;
+    let beginnerLevel = 'off';
+    let data = [];
+    let modules = [];
 
     function saveMastered() {
       localStorage.setItem(STORAGE_KEY, JSON.stringify([...mastered]));
       updateProgress();
     }
 
+    function updateStats() {
+      document.getElementById('totalCount').textContent = data.length;
+      document.getElementById('moduleCount').textContent = modules.length;
+    }
+
     function updateProgress() {
-      const done = mastered.size;
-      const rate = Math.round(done / data.length * 100);
+      const done = [...mastered].filter(id => data.some(item => item.id === id)).length;
+      const rate = data.length ? Math.round(done / data.length * 100) : 0;
       doneCountEl.textContent = done;
       rateTextEl.textContent = rate + '%';
       progressBar.style.width = rate + '%';
+    }
+
+    function setSwitch(el, on) {
+      el.classList.toggle('on', on);
+    }
+
+    function applyModes() {
+      document.body.classList.toggle('hide-keywords', hideKeywords);
+      document.body.classList.toggle('beginner-weak', beginnerLevel === 'weak');
+      document.body.classList.toggle('beginner-strong', beginnerLevel === 'strong');
+      document.querySelectorAll('.answer').forEach(el => el.classList.toggle('show', expandAnswers));
+      document.querySelectorAll('.toggle-answer').forEach(btn => {
+        btn.textContent = expandAnswers ? '收起答案' : '显示答案';
+      });
+      document.querySelectorAll('.hint-box').forEach(box => {
+        box.classList.toggle('show', beginnerLevel !== 'off');
+      });
+
+      const labels = [];
+      labels.push(beginnerLevel === 'off' ? '标准模式' : (beginnerLevel === 'weak' ? '弱提示模式' : '强提示模式'));
+      if (hideKeywords) labels.push('关键词遮挡开启');
+      if (expandAnswers) labels.push('答案展开中');
+      modeText.textContent = '当前：' + labels.join(' · ');
+    }
+
+    function extractKeys(answerHtml) {
+      const matches = [...answerHtml.matchAll(/<span class='key'>(.*?)<\/span>/g)].map(m => m[1]);
+      return matches;
+    }
+
+    function toHintByLevel(text) {
+      const plain = text.replace(/<.*?>/g, '').trim();
+      const chars = [...plain];
+      if (beginnerLevel === 'strong') {
+        if (chars.length <= 2) return plain;
+        return chars.slice(0, 2).join('') + '…';
+      }
+      if (chars.length <= 1) return plain;
+      return chars[0] + '…';
+    }
+
+    function maskKeywordSpans(html) {
+      return html.replace(/<span class='key'>(.*?)<\/span>/g, (_, t) => {
+        const chars = [...t];
+        if (beginnerLevel === 'strong') {
+          if (chars.length <= 2) return `<span class='key'>${t}</span>`;
+          return `<span class='key'>${chars.slice(0, 2).join('')}<span class="mask-rest-strong">${chars.slice(2).join('')}</span></span>`;
+        }
+        if (chars.length <= 1) return `<span class='key'>${t}</span>`;
+        return `<span class='key'>${chars[0]}<span class="mask-rest">${chars.slice(1).join('')}</span></span>`;
+      });
     }
 
     function renderTabs() {
@@ -497,7 +548,13 @@
     function renderCards() {
       const list = data.filter(i => i.module === currentModule);
       cardsEl.innerHTML = '';
+      if (!list.length) {
+        cardsEl.innerHTML = `<div class="card"><div class="prompt">题库尚未载入。</div><div class="answer show">请确认 finance_question_bank.txt 与当前 HTML 位于同一路径。</div></div>`;
+        return;
+      }
       list.forEach(item => {
+        const rawHints = extractKeys(item.a);
+        const hints = beginnerLevel === 'strong' ? rawHints.slice(0, 6) : rawHints.slice(0, 4);
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
@@ -506,19 +563,26 @@
             <div class="badge">${item.tag}</div>
           </div>
           <div class="prompt">${item.q}</div>
-          <div class="answer">${item.a}</div>
+          <div class="hint-box">${hints.map(h => `<span class="hint">${toHintByLevel(h)}</span>`).join('')}</div>
+          <div class="answer">${maskKeywordSpans(item.a)}</div>
           <div class="actions">
-            <button class="small toggle-answer">显示答案</button>
+            <button class="small toggle-answer">${expandAnswers ? '收起答案' : '显示答案'}</button>
             <button class="small toggle-mastered ${mastered.has(item.id) ? 'mastered' : ''}">${mastered.has(item.id) ? '已掌握' : '标记掌握'}</button>
           </div>
         `;
         const ans = card.querySelector('.answer');
         const answerBtn = card.querySelector('.toggle-answer');
         const masteredBtn = card.querySelector('.toggle-mastered');
+
+        ans.classList.toggle('show', expandAnswers);
+        card.querySelector('.hint-box').classList.toggle('show', beginnerLevel !== 'off');
+
         answerBtn.onclick = () => {
-          ans.classList.toggle('show');
-          answerBtn.textContent = ans.classList.contains('show') ? '收起答案' : '显示答案';
+          const willShow = !ans.classList.contains('show');
+          ans.classList.toggle('show', willShow);
+          answerBtn.textContent = willShow ? '收起答案' : '显示答案';
         };
+
         masteredBtn.onclick = () => {
           if (mastered.has(item.id)) {
             mastered.delete(item.id);
@@ -533,51 +597,76 @@
         };
         cardsEl.appendChild(card);
       });
+      applyModes();
     }
 
-    function getRandomQuestion() {
-      const shuffled = [...data].sort(() => Math.random() - 0.5);
-      return shuffled[0];
+    function parseQuestionBank(text) {
+      const blocks = text.split(/^===\s*$/m).map(s => s.trim()).filter(Boolean);
+      const items = [];
+      for (const block of blocks) {
+        if (block.startsWith('#')) continue;
+        const lines = block.split(/\r?\n/);
+        const map = {};
+        for (const line of lines) {
+          const m = line.match(/^(ID|MODULE|TAG|Q|A):\s*(.*)$/);
+          if (m) map[m[1]] = m[2];
+        }
+        if (!map.MODULE || !map.TAG || !map.Q || !map.A) continue;
+        items.push({
+          id: Number(map.ID || items.length + 1),
+          module: map.MODULE,
+          tag: map.TAG,
+          q: map.Q,
+          a: map.A
+        });
+      }
+      return items;
     }
 
-    function setQuiz(item) {
-      quizIndex = item.id;
-      document.getElementById('quizMeta').textContent = `${item.module} · ${item.tag} · 第 ${item.id} 题`;
-      document.getElementById('quizQuestion').textContent = item.q;
-      document.getElementById('quizInput').value = '';
-      const result = document.getElementById('quizResult');
-      result.classList.remove('show');
-      result.innerHTML = '';
+    async function loadQuestionBank() {
+      try {
+        const res = await fetch('./finance_question_bank.txt?v=1');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const text = await res.text();
+        data = parseQuestionBank(text);
+        modules = [...new Set(data.map(i => i.module))];
+        currentModule = modules[0] || '';
+        updateStats();
+        renderTabs();
+        renderCards();
+        updateProgress();
+        applyModes();
+      } catch (err) {
+        updateStats();
+        updateProgress();
+        cardsEl.innerHTML = `
+          <div class="card">
+            <div class="prompt">题库加载失败</div>
+            <div class="answer show">请把 <strong>finance_question_bank.txt</strong> 和当前 HTML 放在同一文件夹中，再通过本地服务器或 GitHub Pages 打开页面。</div>
+          </div>
+        `;
+      }
     }
-
-    document.getElementById('showQuizAnswer').onclick = () => {
-      const item = data.find(i => i.id === quizIndex);
-      const result = document.getElementById('quizResult');
-      result.classList.add('show');
-      result.innerHTML = `<strong>标准答案：</strong><div style="margin-top:8px;">${item.a}</div>`;
-    };
-
-    document.getElementById('nextQuiz').onclick = () => setQuiz(getRandomQuestion());
-
-    document.getElementById('markQuizMastered').onclick = () => {
-      mastered.add(quizIndex);
-      saveMastered();
-      renderCards();
-    };
 
     document.getElementById('toggleKeywords').onclick = () => {
-      app.classList.toggle('hide-keywords');
+      hideKeywords = !hideKeywords;
+      setSwitch(document.getElementById('toggleKeywords'), hideKeywords);
+      applyModes();
     };
 
-    document.getElementById('expandAll').onclick = () => {
-      document.querySelectorAll('.answer').forEach(el => el.classList.add('show'));
-      document.querySelectorAll('.toggle-answer').forEach(btn => btn.textContent = '收起答案');
+    document.getElementById('toggleAnswers').onclick = () => {
+      expandAnswers = !expandAnswers;
+      setSwitch(document.getElementById('toggleAnswers'), expandAnswers);
+      applyModes();
     };
 
-    document.getElementById('collapseAll').onclick = () => {
-      document.querySelectorAll('.answer').forEach(el => el.classList.remove('show'));
-      document.querySelectorAll('.toggle-answer').forEach(btn => btn.textContent = '显示答案');
-    };
+    document.querySelectorAll('#beginnerGroup .mode-btn').forEach(btn => {
+      btn.onclick = () => {
+        beginnerLevel = btn.dataset.mode;
+        document.querySelectorAll('#beginnerGroup .mode-btn').forEach(el => el.classList.toggle('active', el === btn));
+        renderCards();
+      };
+    });
 
     document.getElementById('resetProgress').onclick = () => {
       if (!confirm('确认清空全部掌握记录？')) return;
@@ -586,10 +675,7 @@
       renderCards();
     };
 
-    renderTabs();
-    renderCards();
-    updateProgress();
-    setQuiz(getRandomQuestion());
+    loadQuestionBank();
   </script>
 </body>
 </html>

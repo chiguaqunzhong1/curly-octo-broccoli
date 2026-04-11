@@ -1,0 +1,696 @@
+# 金融基础记忆训练题库
+# 编码：UTF-8
+# 格式：每条记录用 === 分隔；答案中可保留 <span class='key'>关键词</span> 标记。
+
+===
+ID: 1
+MODULE: 融资基础
+TAG: 直接融资
+Q: 直接融资的核心特点是什么？
+A: <span class='key'>直接性</span>、<span class='key'>分散性</span>；融资的信誉存较大差异；部分融资方式具有<span class='key'>不可逆性</span>；融资者有相对较强的自主性。
+
+===
+ID: 2
+MODULE: 融资基础
+TAG: 直接融资
+Q: 直接融资的方式有哪些？
+A: 股票市场融资、债券市场融资、<span class='key'>风险投资融资</span>、商业信用融资（商品赊销、预付定金、预付货款等）、民间借贷。
+
+===
+ID: 3
+MODULE: 融资基础
+TAG: 间接融资
+Q: 间接融资的核心特点是什么？
+A: <span class='key'>资金获得的间接性</span>；融资的相对集中性；融资信誉的差异性相对较少；全程具有可逆性（可返还性）；融资活动主要集中在金融中介机构手中。
+
+===
+ID: 4
+MODULE: 融资基础
+TAG: 间接融资
+Q: 间接融资的方式有哪些？
+A: 银行信用融资、消费信用融资、<span class='key'>租赁融资</span>。
+
+===
+ID: 5
+MODULE: 金融体系
+TAG: 证券交易所
+Q: 1602年阿姆斯特丹创设了什么金融机构？
+A: 阿姆斯特丹创建了世界上最早的证券交易所——<span class='key'>阿姆斯特丹证券交易所</span>。
+
+===
+ID: 6
+MODULE: 金融体系
+TAG: 流动性
+Q: 金融资产流动性的含义是什么？
+A: 又称变现性。指金融资产的持有者为了资金安全而进行资金调拨所形成的短期资金流动，又称避险性资金流动或资本外逃。
+
+===
+ID: 7
+MODULE: 金融体系
+TAG: 商业银行
+Q: 商业银行的三类主要业务是什么？
+A: <span class='key'>负债业务</span>、<span class='key'>资产业务</span>和<span class='key'>表外业务</span>。
+
+===
+ID: 8
+MODULE: 金融体系
+TAG: 中央银行
+Q: 中央银行的货币发行本质是什么？
+A: 实质就是有效发挥其<span class='key'>媒介资源配置</span>的功能。
+
+===
+ID: 9
+MODULE: 金融体系
+TAG: 货币乘数
+Q: 货币乘数与法定存款准备金率是什么关系？公式是什么？
+A: 两者成<span class='key'>反比</span>。若 m 代表货币乘数，则简单货币乘数公式为：<span class='key'>m = 1 / r</span>。
+
+===
+ID: 10
+MODULE: 金融体系
+TAG: 货币政策
+Q: 货币政策目标可分为哪三个层次？
+A: <span class='key'>最终目标</span>、<span class='key'>中介目标</span>和<span class='key'>操作目标</span>。
+
+===
+ID: 11
+MODULE: 金融体系
+TAG: 货币政策
+Q: 货币政策最终目标有哪些？
+A: 稳定物价、充分就业、经济增长、<span class='key'>国际收支平衡</span>和金融稳定。
+
+===
+ID: 12
+MODULE: 金融体系
+TAG: 货币政策
+Q: 货币政策中介目标有哪些？
+A: <span class='key'>银行信贷规模</span>、<span class='key'>货币供应量</span>、<span class='key'>长期利率</span>等。
+
+===
+ID: 13
+MODULE: 金融体系
+TAG: 货币政策
+Q: 货币政策操作目标有哪些？
+A: 短期货币市场利率、银行准备金及<span class='key'>基础货币</span>等。
+
+===
+ID: 14
+MODULE: 金融体系
+TAG: 政策工具
+Q: 一般性货币政策工具主要包括哪三大工具？
+A: <span class='key'>存款准备金制度</span>、<span class='key'>再贴现政策</span>和<span class='key'>公开市场业务</span>。
+
+===
+ID: 15
+MODULE: 证券市场
+TAG: 交易所
+Q: 沪深证券交易所分别何时正式营业？
+A: 上海证券交易所于<span class='key'>1990年12月19日</span>正式营业；深圳证券交易所于<span class='key'>1991年7月3日</span>正式营业。
+
+===
+ID: 16
+MODULE: 证券市场
+TAG: 板块
+Q: 中小企业板块最早由哪家交易所在主板市场内设立？
+A: <span class='key'>深圳证券交易所</span>在主板市场内设立中小企业板块。
+
+===
+ID: 17
+MODULE: 证券市场
+TAG: 创业板
+Q: 创业板市场的定位与特点是什么？
+A: 深圳证券交易所创业板，<span class='key'>高风险</span>、<span class='key'>监管要求严格</span>，以及明显的<span class='key'>高技术产业导向</span>特点。
+
+===
+ID: 18
+MODULE: 证券市场
+TAG: 场外市场
+Q: 场外市场的特点有哪些？
+A: 挂牌标准相对较低；通常不对企业规模和盈利情况等进行要求；信息披露要求较低；监管较为宽松；交易制度通常采用<span class='key'>做市商制度</span>。
+
+===
+ID: 19
+MODULE: 证券市场
+TAG: 场外市场
+Q: 我国的场外市场包括哪些？
+A: 区域性股权市场、券商柜台市场、机构间私募产品报价与服务系统、<span class='key'>私募基金市场</span>。
+
+===
+ID: 20
+MODULE: 证券市场
+TAG: 央行
+Q: 中国人民银行的定位是什么？
+A: 国务院组成部门，是一国政府<span class='key'>发行法偿货币</span>、制定和执行货币政策、实施金融监管的重要机构。
+
+===
+ID: 21
+MODULE: 证券市场
+TAG: 股票发行
+Q: 我国公司再融资的常见方式有哪些？
+A: 向原股东配售股份（配股）、向不特定对象公开募集股份（增发）、发行可转换公司债券、<span class='key'>非公开发行股票</span>（定向增发）。
+
+===
+ID: 22
+MODULE: 证券市场
+TAG: 投资者
+Q: 机构投资者主要包括哪些？
+A: 政府机构投资者、金融机构类投资者、合格境外机构投资者（QFII）、合格境内机构投资者（QDII）、企业和事业法人类机构投资者以及基金投资者。
+
+===
+ID: 23
+MODULE: 证券市场
+TAG: 金融机构
+Q: 银行类金融机构包括哪些？
+A: 商业银行、城市商业银行、农村信用合作社等吸收公众存款的金融机构及<span class='key'>政策性银行</span>。
+
+===
+ID: 24
+MODULE: 证券市场
+TAG: 基金分类
+Q: 基金类投资者包括哪些？
+A: 证券投资基金、社保基金、企业年金和<span class='key'>社会公益基金</span>。
+
+===
+ID: 25
+MODULE: 证券市场
+TAG: 责任
+Q: 证券服务机构制作、出具文件有虚假记载等情形时承担什么责任？
+A: 应当与委托人承担<span class='key'>连带赔偿责任</span>，但能够证明自己没有过错的除外。
+
+===
+ID: 26
+MODULE: 证券市场
+TAG: 交易所设立
+Q: 证券交易所的设立批准机关是谁？
+A: 设立证券交易所必须制定章程，交易所章程的制定和修改，必须经<span class='key'>国务院证券监督管理机构</span>批准。
+
+===
+ID: 27
+MODULE: 证券市场
+TAG: 股票分类
+Q: 在我国，按投资主体不同，股票可分为哪些类型？
+A: <span class='key'>国家股</span>、<span class='key'>法人股</span>、<span class='key'>社会公众股</span>和<span class='key'>外资股</span>等。
+
+===
+ID: 28
+MODULE: 股票
+TAG: B股
+Q: 境内上市外资股（B股）的计价与交易特点是什么？
+A: 采取<span class='key'>记名股票</span>形式，以<span class='key'>人民币</span>标明股票面值，以<span class='key'>外币</span>认购、买卖，在境内证券交易所上市交易。
+
+===
+ID: 29
+MODULE: 股票
+TAG: 境外上市
+Q: 境外上市外资股主要由哪几类构成？
+A: 主要由<span class='key'>H股</span>、<span class='key'>N股</span>、<span class='key'>S股</span>等构成。
+
+===
+ID: 30
+MODULE: 股票
+TAG: 托管
+Q: 什么是证券托管？
+A: 指投资者将持有的证券委托给证券公司保管，并由后者代为处理有关证券权益事务的证券托管行为。
+
+===
+ID: 31
+MODULE: 股票
+TAG: 竞价原则
+Q: 证券交易所内证券交易按什么原则竞价成交？
+A: 按照<span class='key'>价格优先</span>、<span class='key'>时间优先</span>原则竞价成交。
+
+===
+ID: 32
+MODULE: 股票
+TAG: 股票性质
+Q: 股票具有哪五个基本特征？
+A: <span class='key'>收益性</span>、<span class='key'>风险性</span>、<span class='key'>流动性</span>、<span class='key'>永久性</span>、<span class='key'>参与性</span>。
+
+===
+ID: 33
+MODULE: 股票
+TAG: 内在价值
+Q: 哪些因素会影响股票内在价值？
+A: 宏观形势变化、宏观经济政策的调整、供求关系的变化等都会影响上市公司未来收益，进而影响股票的变化。
+
+===
+ID: 34
+MODULE: 债券
+TAG: 债券分析
+Q: 债券分析主要包括哪三大内容？
+A: <span class='key'>宏观经济分析</span>、<span class='key'>行业和区域分析</span>、<span class='key'>公司分析</span>。
+
+===
+ID: 35
+MODULE: 债券
+TAG: 债券定义
+Q: 债券的定义是什么？
+A: 债券是一种有价证券，是社会各类经济主体为筹集资金而向债券投资者出具的、承诺按一定利率定期支付利息并到期偿还本金的<span class='key'>债权债务凭证</span>。
+
+===
+ID: 36
+MODULE: 债券
+TAG: 债券分类
+Q: 按债券募集方式，债券可以分为哪三类？
+A: <span class='key'>公募债券</span>、<span class='key'>凭证式债券</span>和<span class='key'>记账式债券</span>。
+
+===
+ID: 37
+MODULE: 债券
+TAG: 政府债券
+Q: 政府债券的含义是什么？
+A: 指政府部门或其他代理机构为筹集资金，以政府名义发行的、承诺在一定时期支付利息和到期归还本金的债务凭证。
+
+===
+ID: 38
+MODULE: 债券
+TAG: 政府债券
+Q: 政府债券的特点有哪些？
+A: <span class='key'>安全性高</span>、<span class='key'>流动性强</span>、<span class='key'>收益稳定</span>、<span class='key'>免税待遇</span>。
+
+===
+ID: 39
+MODULE: 债券
+TAG: 地方政府债
+Q: 地方政府债券的定义是什么？
+A: 也称地方公债或地方债，是地方政府根据本地区经济发展和资金需求状况，以承担还本付息责任为前提，向社会筹集资金的债务凭证。
+
+===
+ID: 40
+MODULE: 债券
+TAG: 金融债
+Q: 我国的金融债券主要包括哪些？
+A: 政策性金融债券、商业银行债券、证券公司债券、保险公司债券、财务公司债券和<span class='key'>金融租赁公司债券</span>等。
+
+===
+ID: 41
+MODULE: 债券
+TAG: 可转债
+Q: 可转换公司债券与一般债券最大的区别是什么？
+A: 在转换前投资者可以定期得到利息收入，但此时<span class='key'>不具有股东的权利</span>。
+
+===
+ID: 42
+MODULE: 债券
+TAG: 公司债发行
+Q: 中小市值企业集合票据的发行主体有什么要求？
+A: <span class='key'>2个（含）以上</span>、<span class='key'>10个（含）以下</span>具有法人资格的企业。
+
+===
+ID: 43
+MODULE: 债券
+TAG: 国际债券
+Q: 欧洲债券的定义是什么？
+A: 借款人在本国境外市场发行的、不以发行市场所在国货币为面值的国际债券。
+
+===
+ID: 44
+MODULE: 债券
+TAG: 国际债券
+Q: 欧洲债券常见的面值货币有哪些？
+A: 主要为<span class='key'>美元</span>；也有欧元、英镑、日元等；还可能使用复合货币单位，如特别提款权。
+
+===
+ID: 45
+MODULE: 基金与衍生品
+TAG: 风险管理
+Q: 什么是基差风险？
+A: <span class='key'>基差少要回报率</span>等于<span class='key'>真实无风险收益率</span>加<span class='key'>预期通货膨胀率</span>加<span class='key'>风险溢价</span>。
+
+===
+ID: 46
+MODULE: 基金与衍生品
+TAG: 基金定义
+Q: 证券投资基金的特点有哪些？
+A: <span class='key'>集合投资</span>、<span class='key'>专业管理</span>、<span class='key'>组合投资</span>、<span class='key'>分散风险</span>；<span class='key'>利益共享</span>、<span class='key'>风险共担</span>；严格监管、信息透明；独立托管、保障安全。
+
+===
+ID: 47
+MODULE: 基金与衍生品
+TAG: 封闭式基金
+Q: 封闭式基金的存续期通常如何规定？
+A: 通常在<span class='key'>5年以上</span>，一般为<span class='key'>10年或15年</span>，经持有人大会通过并经监管机构同意可以宣告延长期限。
+
+===
+ID: 48
+MODULE: 基金与衍生品
+TAG: 基金运作
+Q: 从基金管理人的角度看，基金运作可以分为哪两大部分？
+A: <span class='key'>基金的市场营销</span>、<span class='key'>投资管理</span>与<span class='key'>后台管理</span>。
+
+===
+ID: 49
+MODULE: 基金与衍生品
+TAG: 基金管理人
+Q: 基金管理人的角色定位是什么？
+A: 从基金管理人的角度看，基金运作可分为<span class='key'>基金的市场营销</span>、<span class='key'>投资管理</span>与<span class='key'>后台管理</span>三部分。其总托管人既是<span class='key'>基金的当事人</span>，又是<span class='key'>基金的主要服务机构</span>。
+
+===
+ID: 50
+MODULE: 基金与衍生品
+TAG: 行业组织
+Q: 我国基金行业的自律性组织是什么？
+A: <span class='key'>中国证券投资基金业协会</span>是我国基金行业的<span class='key'>自律性组织</span>。
+
+===
+ID: 51
+MODULE: 基金与衍生品
+TAG: 开放式基金
+Q: 什么是开放式基金的赎回？
+A: 开放式基金的赎回，是指基金份额持有人要求<span class='key'>基金管理人</span>购回其所持有的<span class='key'>开放式基金份额</span>的行为。
+
+===
+ID: 52
+MODULE: 基金与衍生品
+TAG: 基金估值
+Q: 基金资产净值和基金份额净值的公式是什么？
+A: 基金资产净值=<span class='key'>基金资产总值-基金负债</span>；基金份额净值=<span class='key'>基金资产净值÷基金总份额</span>。
+
+===
+ID: 53
+MODULE: 基金与衍生品
+TAG: 基金监管
+Q: 基金管理人申请募集基金时，需要向谁履行登记手续并报送情况？
+A: 担任公开募集基金的基金管理人，应当按照规定向<span class='key'>中国证券投资基金业协会</span>履行登记手续，报送基本情况。
+
+===
+ID: 54
+MODULE: 基金与衍生品
+TAG: 远期合约
+Q: 按基础资产划分，常见金融远期合约包括哪四类？
+A: <span class='key'>股权类资产的远期合约</span>、<span class='key'>债权类资产的远期合约</span>、<span class='key'>远期利率协议</span>、<span class='key'>远期汇率协议</span>。
+
+===
+ID: 55
+MODULE: 基金与衍生品
+TAG: 金融期权
+Q: 金融期权的四项基本功能和按履约时间的分类是什么？
+A: 四项基本功能：<span class='key'>套期保值</span>、<span class='key'>价格发现</span>、<span class='key'>投机</span>和<span class='key'>获利</span>。按履约时间不同，可分为<span class='key'>欧式期权</span>、<span class='key'>美式期权</span>和<span class='key'>修正的美式期权</span>。
+
+===
+ID: 56
+MODULE: 融资基础
+TAG: 融资分类
+Q: 直接融资与间接融资的主要区别是什么？
+A: 主要在于融资过程中资金需求者与资金供给者是否<span class='key'>直接形成</span>债权债务关系；一般认为直接融资活动在时间上<span class='key'>早于</span>间接融资，且直接融资是间接融资的基础。
+
+===
+ID: 57
+MODULE: 全球金融市场
+TAG: 国际资本流动
+Q: 国际资本流动按跨国界方向如何划分？
+A: 包括<span class='key'>资金流入</span>和<span class='key'>资金流出</span>两个方面。
+
+===
+ID: 58
+MODULE: 全球金融市场
+TAG: 国际长期资本流动
+Q: 国际长期资本流动的期限和类型是什么？
+A: 通常指期限在<span class='key'>1年以上</span>的跨国流动，主要包括国际直接投资、国际间接投资和<span class='key'>国际信贷</span>。
+
+===
+ID: 59
+MODULE: 全球金融市场
+TAG: 国际短期资本流动
+Q: 国际短期资本流动的期限和类型是什么？
+A: 通常指期限为<span class='key'>1年或1年以下</span>的跨国流动，主要包括贸易资金流动、套利性资金流动、保值性资金流动和<span class='key'>投机性资金流动</span>。
+
+===
+ID: 60
+MODULE: 金融中介
+TAG: 证券公司业务
+Q: 证券公司的主要业务包括哪些？
+A: 包括<span class='key'>证券经纪</span>、证券投资咨询、与证券交易和投资活动有关的财务顾问、证券承销与保荐、证券自营、证券资产管理、融资融券、分销金融产品、证券公司中间介绍及<span class='key'>私募投资基金</span>相关业务。
+
+===
+ID: 61
+MODULE: 证券市场
+TAG: 交易所
+Q: 证券交易所的定义与组织形式是什么？
+A: 证券交易所是证券买卖双方<span class='key'>公开交易</span>的场所，是证券市场的核心；组织形式主要有<span class='key'>会员制</span>和<span class='key'>公司制</span>。
+
+===
+ID: 62
+MODULE: 证券市场
+TAG: 证券业协会
+Q: 中国证券业协会的性质和职责是什么？
+A: 中国证券业协会是<span class='key'>非营利性社会团体法人</span>，采取会员制组织形式，履行<span class='key'>自律、服务、传导</span>等职责。
+
+===
+ID: 63
+MODULE: 股票
+TAG: 普通股分类
+Q: 普通股可按哪些维度分类？
+A: 可按是否特别股票分为普通股和特别股票，按记名方式分为<span class='key'>记名股票</span>和<span class='key'>无记名股票</span>，按有无票面金额分为有面额股票和无面额股票，按上市地区可分为A股、B股、H股、N股、S股等。
+
+===
+ID: 64
+MODULE: 股票
+TAG: 普通股权利
+Q: 普通股股东享有哪些基本权利？
+A: 包括<span class='key'>公司重大决策参与权</span>、公司资产收益权和剩余资产分配权，以及查阅权、处置权、股东提案权、诉权和要求公司回购股份权。
+
+===
+ID: 65
+MODULE: 股票
+TAG: 优先股
+Q: 优先股相对于普通股的核心特征是什么？
+A: 优先股股息<span class='key'>相对固定</span>，清偿顺序通常优先于普通股，但一般不参与公司日常经营管理，<span class='key'>权利范围较小</span>。
+
+===
+ID: 66
+MODULE: 股票
+TAG: 优先股分类
+Q: 优先股常见分类有哪些？
+A: 包括固定股息率与浮动股息率优先股、强制分红与非强制分红优先股、可累计与非累计优先股、参与与不参与优先股、可转换与不可转换优先股、可回购与不可回购优先股。
+
+===
+ID: 67
+MODULE: 股票
+TAG: 账户
+Q: 开立证券账户时主要涉及哪些账户？
+A: 通常包括开立<span class='key'>证券账户</span>和开立<span class='key'>资金账户</span>；证券账户用于记载证券种类、数量及变动，资金账户反映买卖证券的货币收付与结存。
+
+===
+ID: 68
+MODULE: 股票
+TAG: 委托形式
+Q: 证券委托有哪些形式与基本内容？
+A: 委托形式包括<span class='key'>柜台委托</span>和<span class='key'>非柜台委托</span>；基本内容包括证券账户号码、证券代码、买卖方向、委托数量、委托价格及其他要求内容。
+
+===
+ID: 69
+MODULE: 股票
+TAG: 集合竞价
+Q: 沪深北交易所的集合竞价与连续竞价时间如何记忆？
+A: 开盘集合竞价一般为<span class='key'>9:15—9:25</span>，连续竞价通常为<span class='key'>9:30—11:30</span>、<span class='key'>13:00—14:57</span>，收盘集合竞价为<span class='key'>14:57—15:00</span>。
+
+===
+ID: 70
+MODULE: 股票
+TAG: 竞价原则
+Q: 证券交易竞价原则和方式是什么？
+A: 竞价原则是<span class='key'>价格优先</span>、<span class='key'>时间优先</span>；竞价方式主要有<span class='key'>集合竞价</span>和<span class='key'>连续竞价</span>。
+
+===
+ID: 71
+MODULE: 股票
+TAG: 涨跌幅限制
+Q: 沪深主板、科创板、创业板、北交所股票涨跌幅限制如何区分？
+A: 沪深主板一般为<span class='key'>10%</span>，风险警示股票通常为<span class='key'>5%</span>；科创板和创业板一般为<span class='key'>20%</span>；北京证券交易所一般为<span class='key'>30%</span>。
+
+===
+ID: 72
+MODULE: 互联互通
+TAG: 沪深港通
+Q: 沪股通、深股通和沪伦通分别是什么？
+A: 沪港通、深港通属于内地与香港股票市场<span class='key'>交易互联互通机制</span>；沪伦通是上海证券交易所与伦敦证券交易所的互联互通机制，初期以<span class='key'>存托凭证</span>起步。
+
+===
+ID: 73
+MODULE: 股票
+TAG: 股票价值
+Q: 股票的四种常见价值是什么？
+A: 分别是<span class='key'>票面价值</span>、<span class='key'>账面价值</span>、<span class='key'>清算价值</span>和<span class='key'>内在价值</span>。
+
+===
+ID: 74
+MODULE: 债券
+TAG: 债券分类
+Q: 债券按发行主体、付息方式和形式如何分类？
+A: 按发行主体可分为<span class='key'>政府债券</span>、金融债券、公司债券等；按付息方式可分为零息债券、附息债券和贴现债券；按债券形式可分为实物债券、凭证式债券和记账式债券。
+
+===
+ID: 75
+MODULE: 债券
+TAG: 政府债券
+Q: 政府债券的定义与核心特征是什么？
+A: 中央政府发行的称国债，地方政府发行的称地方政府债；政府债券一般具有<span class='key'>安全性高</span>、<span class='key'>流通性强</span>、<span class='key'>收益稳定</span>、<span class='key'>免税待遇</span>等特征。
+
+===
+ID: 76
+MODULE: 债券
+TAG: 中央政府债券
+Q: 中央政府债券常见分类有哪些？
+A: 可按偿还期限分为短期、中期、长期国债；按资金用途分为赤字国债、建设国债、战争国债、特种国债；按流通与否分为流通国债与非流通国债；还可按币种和债券方式分类。
+
+===
+ID: 77
+MODULE: 债券
+TAG: 地方政府债券
+Q: 地方政府债券的概念和类型是什么？
+A: 地方政府债券又称<span class='key'>地方公债</span>或地方债，是地方政府为弥补财政资金不足或兴建项目筹资而发行的债务凭证，常见有<span class='key'>一般债券</span>和<span class='key'>专项债券</span>。
+
+===
+ID: 78
+MODULE: 资产证券化
+TAG: 定义
+Q: 资产证券化的定义是什么？
+A: 是以<span class='key'>特定基础资产</span>或资产组合所产生的现金流为支持，发行可交易证券的一种<span class='key'>融资形式</span>。
+
+===
+ID: 79
+MODULE: 资产证券化
+TAG: 分类
+Q: 资产证券化常见基础资产类型有哪些？
+A: 常见包括<span class='key'>不动产证券化</span>、应收账款证券化、信贷资产证券化、未来收益证券化和债券组合证券化等。
+
+===
+ID: 80
+MODULE: 资产证券化
+TAG: 参与主体
+Q: 资产证券化业务链条中的主要参与者有哪些？
+A: 常见有发起人、特殊目的机构<span class='key'>(SPV)</span>、信用增级机构、信用评级机构、承销商、服务商和<span class='key'>受托人</span>。
+
+===
+ID: 81
+MODULE: 资产证券化
+TAG: ABS/ABN
+Q: ABS与ABN在教材中的对应关系如何记忆？
+A: 以<span class='key'>资产池</span>为基础发行的证券通常称为资产支持证券<span class='key'>(ABS)</span>；国际通行中，基于房地产抵押贷款的证券化产品常称<span class='key'>MBS</span>；其余资产证券化产品常概称为ABS。
+
+===
+ID: 82
+MODULE: 债券
+TAG: 债券估值
+Q: 债券估值的基本原理是什么？
+A: 债券价值的基本原理是<span class='key'>现金流贴现</span>。
+
+===
+ID: 83
+MODULE: 债券
+TAG: 债券到期收益率
+Q: 债券的内部收益率与到期收益率是什么？
+A: 债券的内部收益率就是使投资者买入债券所要求的最低回报率，也可称<span class='key'>必要回报率</span>；通常用<span class='key'>到期收益率</span>来表征。
+
+===
+ID: 84
+MODULE: 债券
+TAG: 影响债券价格
+Q: 影响债券价值的基本因素有哪些？
+A: 面值、票面利率、折现率、到期时间、付息频率都会影响债券价值；其中面值和票面利率通常与债券价值<span class='key'>同向</span>，折现率通常与债券价值<span class='key'>反向</span>。
+
+===
+ID: 85
+MODULE: 基金
+TAG: 申购赎回
+Q: 开放式基金的申购和赎回分别是什么？
+A: 申购是投资者在基金合同生效后申请购买基金份额；赎回是基金份额持有人要求基金管理人<span class='key'>购回</span>其持有份额。
+
+===
+ID: 86
+MODULE: 基金
+TAG: 未知价原则
+Q: 开放式基金申购赎回的交易原则是什么？
+A: 货币基金通常按<span class='key'>固定净值</span>申购赎回；一般开放式基金实行<span class='key'>未知价</span>交易原则，即申购赎回时并不能即时获知成交价格。
+
+===
+ID: 87
+MODULE: 基金
+TAG: 费用
+Q: 开放式基金申购赎回涉及哪些主要费用？
+A: 主要包括<span class='key'>申购费</span>、<span class='key'>赎回费</span>和<span class='key'>销售服务费</span>。
+
+===
+ID: 88
+MODULE: 基金
+TAG: 场内交易
+Q: 封闭式基金场内交易时间与规则如何记忆？
+A: 交易日通常为周一至周五，时间多为<span class='key'>上午9:30—11:30</span>、<span class='key'>13:00—15:00</span>；遵循<span class='key'>价格优先</span>、<span class='key'>时间优先</span>原则，并实行相应涨跌幅限制。
+
+===
+ID: 89
+MODULE: 基金
+TAG: 基金利润
+Q: 基金收入与公允价值变动损益分别包括什么？
+A: 基金收入包括利息收入、投资收益和其他收入；公允价值变动损益是交易性金融资产、交易性金融负债等按公允价值计量形成的当期损益。
+
+===
+ID: 90
+MODULE: 基金
+TAG: 基金税收
+Q: 个人投资者买卖基金份额的主要税收规则是什么？
+A: 个人投资者买卖基金份额通常<span class='key'>暂免征增值税</span>，买卖价差通常<span class='key'>免征印花税</span>，从基金分配和申赎取得的差价收入通常暂不征收个人所得税。
+
+===
+ID: 91
+MODULE: 基金
+TAG: 基金监管
+Q: 基金监管的核心内容有哪些？
+A: 包括对基金销售活动的监管、对基金<span class='key'>投资与交易行为</span>的监管，以及对基金信息披露等环节的监管。
+
+===
+ID: 92
+MODULE: 基金
+TAG: 禁止行为
+Q: 基金禁止投资或从事的行为包括哪些？
+A: 包括承销证券、向他人贷款或提供担保、承担无限责任投资、买卖其他基金份额（法规另有规定除外）、向基金管理人和托管人出资，以及从事内幕交易、操纵市场等。
+
+===
+ID: 93
+MODULE: 基金
+TAG: 信息披露
+Q: 基金信息披露的分类有哪些？
+A: 主要包括<span class='key'>基金募集信息披露</span>、基金运作信息披露和<span class='key'>临时信息披露</span>。
+
+===
+ID: 94
+MODULE: REITs
+TAG: 概念
+Q: 基础设施公募REITs的基本概念是什么？
+A: 基础设施公募REITs是通过公开募集方式向社会投资者募集资金，并将资金主要投资于基础设施资产支持证券的标准化金融产品。
+
+===
+ID: 95
+MODULE: REITs
+TAG: 投资范围
+Q: 基础设施公募REITs主要投向哪些领域？
+A: 主要投向依法合规、权属清晰、经营稳定的<span class='key'>仓储物流</span>、交通设施、市政设施、产业园区、消费基础设施及符合国家战略的其他基础设施领域。
+
+===
+ID: 96
+MODULE: REITs
+TAG: 核心要求
+Q: 基础设施公募REITs有哪些关键比例要求？
+A: 通常要求<span class='key'>80%以上</span>基金资产投资于基础设施资产支持证券，并持有其全部份额；基金通过资产支持证券和项目公司持有基础设施项目的<span class='key'>完全所有权或经营权</span>。
+
+===
+ID: 97
+MODULE: REITs
+TAG: 分配要求
+Q: 基础设施公募REITs收益分配有哪些要求？
+A: 要求封闭式运作，收益分配比例不低于合并后基金年度可供分配金额的<span class='key'>90%</span>。
+
+===
+ID: 98
+MODULE: REITs
+TAG: 特点
+Q: 基础设施公募REITs的主要特点是什么？
+A: 具有<span class='key'>盘活存量资产</span>、提升直接融资比重、信息披露健全、透明度高等特点，也为投资者提供流动性较强的基础设施投资工具。
+
+===
+ID: 99
+MODULE: 境外机构债券
+TAG: 发行条件
+Q: 境外机构债券发行需满足哪些基本条件？
+A: 通常要求实际缴纳资本不少于<span class='key'>100亿元人民币</span>或等值货币，具有良好的治理和完善风控体系，财务稳健且最近<span class='key'>三年连续盈利</span>，并具备债券发行经验与偿债能力。
